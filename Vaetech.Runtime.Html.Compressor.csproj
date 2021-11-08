@@ -10,6 +10,8 @@
     <Version>1.0.2</Version>
     <PackageIcon>package.png</PackageIcon>
     <PackageIconUrl />
+    <RepositoryUrl>https://github.com/cochachyLE-Eng/Vaetech.Runtime.Html.Compressor</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/cochachyLE-Eng/Vaetech.Runtime.Html.Compressor</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
