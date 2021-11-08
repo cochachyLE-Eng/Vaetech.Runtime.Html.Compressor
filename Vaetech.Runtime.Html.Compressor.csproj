@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFrameworks>netstandard2.0;netstandard2.1;net45;net46;net461;net48</TargetFrameworks>
+    <Authors>Luis Eduardo Cochachi Chamorro</Authors>
+    <Description>HTML compressor, HTML minifier, Css Minifier, Javascrip Minifier</Description>
+    <PackageTags>HTML compressor, HTML minifier, Css Minifier, Javascrip Minifier</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	<PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
+    <Version>1.0.2</Version>
+    <PackageIcon>package.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\icons\package.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
