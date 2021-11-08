@@ -9,82 +9,76 @@ namespace Vaetech.Runtime.Html.Compressor
 		private long time = 0;
 		private int preservedSize = 0;
 
-		/**
-		 * Returns metrics of an uncompressed document
-		 * 
-		 * @return metrics of an uncompressed document
-		 * @see HtmlMetrics
-		 */
+		/// <summary>
+		/// Returns metrics of an uncompressed document		
+		/// </summary>
+		/// <returns>Metrics of an uncompressed document.</returns>
 		public HtmlMetrics getOriginalMetrics()
 		{
 			return originalMetrics;
 		}
-
-		/**
-		 * @param originalMetrics the originalMetrics to set
-		 */
+		
+		/// <param name="originalMetrics">The originalMetrics to set</param>
 		public void setOriginalMetrics(HtmlMetrics originalMetrics)
 		{
 			this.originalMetrics = originalMetrics;
 		}
 
-		/**
-		 * Returns metrics of a compressed document
-		 * 
-		 * @return metrics of a compressed document
-		 * @see HtmlMetrics
-		 */
+		/// <summary>
+		/// Returns metrics of a compressed document.<br/><br/>		
+		/// </summary>
+		/// <returns>Metrics of a compressed document</returns>
 		public HtmlMetrics getCompressedMetrics()
 		{
 			return compressedMetrics;
 		}
 
-		/**
-		 * @param compressedMetrics the compressedMetrics to set
-		 */
+		/// <summary>
+		/// @param compressedMetrics the compressedMetrics to set
+		/// </summary>
 		public void setCompressedMetrics(HtmlMetrics compressedMetrics)
 		{
 			this.compressedMetrics = compressedMetrics;
 		}
 
-		/**
-		 * Returns total compression time. 
-		 * 
-		 * <p>Please note that compression performance varies very significantly depending on whether it was 
-		 * a cold run or not (specifics of Java VM), so for accurate real world results it is recommended 
-		 * to take measurements accordingly.   
-		 * 
-		 * @return the compression time, in milliseconds 
-		 *      
-		 */
+		/// <summary>
+		/// Returns total compression time. 
+		/// 
+		/// <p>Please note that compression performance varies very significantly depending on whether it was 
+		/// a cold run or not (specifics of Java VM), so for accurate real world results it is recommended 
+		/// to take measurements accordingly.   
+		/// 
+		/// @return the compression time, in milliseconds 
+		///      
+		/// </summary>
 		public long getTime()
 		{
 			return time;
 		}
 
-		/**
-		 * @param time the time to set
-		 */
+		/// <summary>
+		/// @param time the time to set
+		/// </summary>
 		public void setTime(long time)
 		{
 			this.time = time;
 		}
 
-		/**
-		 * Returns total size of blocks that were skipped by the compressor 
-		 * (for example content inside <code>&lt;pre></code> tags or inside   
-		 * <code>&lt;script></code> tags with disabled javascript compression)
-		 * 
-		 * @return the total size of blocks that were skipped by the compressor, in bytes
-		 */
+		/// <summary>
+		/// Returns total size of blocks that were skipped by the compressor 
+		/// (for example content inside <code>&lt;pre></code> tags or inside   
+		/// <c>&lt;script></c> tags with disabled javascript compression)
+		/// 
+		/// @return the total size of blocks that were skipped by the compressor, in bytes
+		/// </summary>
 		public int getPreservedSize()
 		{
 			return preservedSize;
 		}
 
-		/**
-		 * @param preservedSize the preservedSize to set
-		 */
+		/// <summary>
+		/// @param preservedSize the preservedSize to set
+		/// </summary>
 		public void setPreservedSize(int preservedSize)
 		{
 			this.preservedSize = preservedSize;
